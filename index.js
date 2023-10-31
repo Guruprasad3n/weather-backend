@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv").config();
-var Key = `fbaca50e2db19b4d58cc42e0abbb809a`;
+var Key = process.env.OPEN_WEATHER_API;
 const { createChat, CancelledCompletionError } = require("completions");
 
 const PORT = process.env.PORT || 8080;
