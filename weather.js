@@ -9,7 +9,7 @@ const PORT = process.env.PORT;
 app.use(express.json());
 app.use(cors());
 
-var Key = `fbaca50e2db19b4d58cc42e0abbb809a`;
+var Key = process.env.OPEN_WEATHER_API;
 
 const chat = createChat({
   apiKey: process.env.OPENAI_API_KEY,
